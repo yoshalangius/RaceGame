@@ -1,4 +1,4 @@
-// Written by Stephen P S AKA Zergling103 - Yoshiegg900@hotmail.com - 25-12-2011
+
 
 using UnityEngine;
 using System.Collections;
@@ -15,7 +15,7 @@ public class MoveToObject : MonoBehaviour {
 		transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(objectToMoveTowards.position - transform.position), ts); 
 		
 		float s = Mathf.Clamp01(speed * Time.deltaTime);
-		//transform.position += (objectToMoveTowards.position - transform.position).normalized * s;
+		
 		transform.position += transform.forward * s;
 		
 		Debug.DrawLine(transform.position,objectToMoveTowards.position, Color.cyan);

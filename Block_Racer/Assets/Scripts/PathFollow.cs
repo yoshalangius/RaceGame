@@ -1,5 +1,3 @@
-// Written by Stephen P S AKA Zergling103 - Yoshiegg900@hotmail.com - 25-12-2011
-
 using UnityEngine;
 using System.Collections;
 
